@@ -15,7 +15,7 @@ def dark_forest():
                "****What do you do? Do you choose FIGHT or FLIGHT?****\n")
 
 
-    choice = raw_input("---> ")
+    choice = raw_input("----> ")
 
     if choice.lower() in ["fight", "battle", "war", "f"]:
         print_slow("Shia Lebouf is in rage mode you fool! Why would you choose to fight with those weak little arms!\n"
