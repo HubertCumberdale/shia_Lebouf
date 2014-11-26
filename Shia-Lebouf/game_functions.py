@@ -4,14 +4,31 @@ import time
 
 
 def print_slow(string):
+    punctuation = [".", "!", "?"]
+
     for letter in string:
         stdout.write(letter)
-        time.sleep(.035)
+        stdout.flush()
+
+        if letter in punctuation:
+            time.sleep(.5)
+        else:
+            time.sleep(.035)
+    print("")
 
 def way_slow_print(string):
+
+    punctuation = [".", "!", "?"]
+
     for letter in string:
         stdout.write(letter)
-        time.sleep(.7)
+        stdout.flush()
+
+        if letter in punctuation:
+            time.sleep(.7)
+        else:
+            time.sleep(.05)
+    print ("")
 
 def dead(why):
     print_slow(why)
